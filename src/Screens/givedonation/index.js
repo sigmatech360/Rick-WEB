@@ -384,7 +384,7 @@ function Givedonation() {
           </div>
         </section>
 
-        <Leadership />
+        {/* <Leadership /> */}
         <Contact />
         <Sponsor />
       </Layout>

@@ -1,7 +1,7 @@
 import "./index.css";
 import {useEffect}  from 'react'
 import AOS from "aos";
-
+import Leadership from '../../components/Leadership'
 import heropage2 from "../../Assets/images/heropage2.png";
 import Layout from "../../components/layout";
 import ourmission from "../../Assets/images/ourmission.png";
@@ -220,7 +220,7 @@ function About() {
           </div>
         </section>
 
-        <section className="driving-dedication">
+        {/* <section className="driving-dedication">
           <div className="container my-5">
             <h2 className="title text-center mb-4"   data-aos="fade-up"
                         data-aos-offset="0"
@@ -266,8 +266,11 @@ function About() {
               ))}
             </Slider>
           </div>
-        </section>
+        </section> */}
 
+
+
+<Leadership />
         <Contact />
 
         <Sponsor />

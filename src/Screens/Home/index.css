@@ -324,6 +324,20 @@
   font-family: "Inter";
 }
 
+
+
+.help-available .parabtn:hover {
+  color: black;
+  border: 1px solid var(--unnamed-color-fdd22e);
+  border: 1px solid #fdd22e;
+  background-color: yellow;
+  border-radius: 26px;
+  opacity: 1;
+  margin-left: 23px;
+  font-family: "Inter";
+}
+
+
 .youthshelter {
   text-align: left;
   /* font: italic normal bold  Test Signifier; */

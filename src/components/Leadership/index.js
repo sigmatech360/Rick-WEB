@@ -3,7 +3,7 @@ import dedleadimg2 from "../../Assets/images/dedleadimg2.png";
 import dedleadimg3 from "../../Assets/images/dedleadimg3.png";
 import dedleadimg4 from "../../Assets/images/dedleadimg4.png";
 import Slider from "react-slick";
-
+import placeholder from '../../Assets/images/placeholder.jpg'
 import React, { useEffect } from "react";
 import AOS from "aos";
 import dedicationunderline from "../../Assets/images/dedicationunderline.png";
@@ -53,28 +53,28 @@ function Leadership() {
       name: "Executive Director: Christine Stellino",
       title: "christine@his-oc.org",
 
-      imgSrc: dedleadimg1, // replace with actual image paths
+      imgSrc: placeholder, // replace with actual image paths
     },
     {
       animation: "fade-up",
       name: "Program Director: Alfa Hernandez",
       title: "alfa@his-oc.org",
       title2: "(714) 582-7981",
-      imgSrc: dedleadimg2,
+      imgSrc: placeholder,
     },
     {
       animation: "fade-down",
       name: "Program Manager: Anthony Trejo",
       title: "cuca@his-oc.org",
       title2: "(714) 465-5062",
-      imgSrc: dedleadimg3,
+      imgSrc: placeholder,
     },
     {
       animation: "fade-left",
       name: "TAY Program: Cuca Trejo",
       title: "cuca@his-oc.org",
       title2: "(714) 465-5062",
-      imgSrc: dedleadimg4,
+      imgSrc: placeholder,
     },
   ];
 

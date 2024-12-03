@@ -264,7 +264,7 @@ function GetHelp() {
           </div>
         </section>
 
-        <Leadership />
+        {/* <Leadership /> */}
         <Contact />
         <Sponsor />
       </Layout>

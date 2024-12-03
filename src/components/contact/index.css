@@ -64,7 +64,7 @@
   gap: 1rem; /* Spacing between items */
 }
 .dropdown-item.active, .dropdown-item:active {
-  color: var(--bs-dropdown-link-active-color);
+  color: black!important;
   text-decoration: none;
   background-color: yellow!important;
 }

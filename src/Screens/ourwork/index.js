@@ -274,7 +274,7 @@ function OurWork() {
         {/* BuildingFutures */}
         <Contact />
 
-        <Leadership />
+        {/* <Leadership /> */}
         <Sponsor />
       </Layout>
     </>

@@ -23,7 +23,7 @@ export default function UserRouter() {
         <Route path="/givedonation" element={<Givedonation/>} />
         <Route path="/contactus" element={<Contactus/>} />
         <Route path="/sponsorship" element={<Sponsorship/>} />
-        <Route path="/programsprojects" element={<ProgramsProjects/>} />
+        <Route path="/our-programs" element={<ProgramsProjects/>} />
         <Route path="/topvolunteer" element={<TopVolunteer/>} />
         <Route path="/ourpodcast" element={<Ourpodcast/>} />
          

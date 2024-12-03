@@ -272,7 +272,7 @@ function ProgramsProjects() {
 
         <Contact />
 
-        <Leadership />
+        {/* <Leadership /> */}
         <Sponsor />
       </Layout>
     </>

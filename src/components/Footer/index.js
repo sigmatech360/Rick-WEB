@@ -114,8 +114,8 @@ function Footer() {
                 <h5>Our Impact</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <Link onClick={scrollToTop} to={"/programsprojects"} className="">
-                      Projects
+                    <Link onClick={scrollToTop} to={"/our-programs"} className="">
+                      Our Programs
                     </Link>
                   </li>
                   <li>
@@ -148,11 +148,7 @@ function Footer() {
                     Our Podcast
                     </Link>
                   </li>
-                  <li>
-                    <Link  onClick={handleShow} href="#!" className="">
-                      Be A Sponsor
-                    </Link>
-                  </li>
+                  
                 </ul>
               </div>
               <div className="col-md-2">

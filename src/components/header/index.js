@@ -153,7 +153,7 @@ function Header() {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Programs
+                     Our Initiatives
                     </Link>
                     <ul className="dropdown-menu">
                       <li>
@@ -162,8 +162,8 @@ function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link className={`dropdown-item ${location.pathname.includes('/programsprojects') ? 'active' : ''}`} to="/programsprojects">
-                          Programs projects
+                        <Link className={`dropdown-item ${location.pathname.includes('/our-programs') ? 'active' : ''}`} to="/our-programs">
+                        Our  Programs  
                         </Link>
                       </li>
                       <li>
@@ -301,7 +301,7 @@ function Header() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Programs
+                Our Initiatives
               </Link>
 
               {/* <ul className="dropdown-menu">
@@ -311,7 +311,7 @@ function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" to="/programsprojects">
+                        <Link className="dropdown-item" to="/our-programs">
                           Programs projects
                         </Link>
                       </li>
@@ -339,8 +339,8 @@ function Header() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/programsprojects" className="dropdown-item">
-                    Programs Projects
+                  <Link to="/our-programs" className="dropdown-item">
+                 Our Programs  
                   </Link>
                 </li>
                 <li>
