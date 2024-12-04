@@ -30,7 +30,7 @@ import ourworkbg from "../../Assets/images/ourworkbg.png";
 import BuildingFutures from "../../components/BuildingFutures";
 import tradhousingprogramunderline from "../../Assets/images/tradhousingprogramunderline.svg";
 // import { FaArrowRight } from "react-icons/fa";
-
+import connection from "../../Assets/images/connection.png";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 
@@ -147,7 +147,7 @@ function OurWork() {
       highlightedWords: "OC",
       description: "Helping College Students Transition",
 
-      imgSrc: Oc,
+      imgSrc: Closet,
     },
     {
       link: "/transitional-aged-youth-shelter",
@@ -155,7 +155,7 @@ function OurWork() {
 
       description: "Guiding To Services And Support",
       highlightedWords: "Connection",
-      imgSrc: Oc,
+      imgSrc: connection,
     },
     {
       link: "/transitional-housing-program",
@@ -181,7 +181,7 @@ function OurWork() {
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
-          <div className="container">
+          <div className="container ourprogramgradbg">
             <p
               className="info-text text-start"
               data-aos="fade-up"
@@ -200,83 +200,7 @@ function OurWork() {
           </div>
         </section>
 
-        <section className="programs-section ">
-          <div className="container my-5">
-            <div className="row">
-              {/* Program List Section */}
-              <div
-                className="programs-section-left mb-2 col-lg-6"
-                data-aos="fade-right"
-                data-aos-offset="0"
-                data-aos-duration="1000"
-              >
-                <div className="bordertop mb-0">
-                  {programs.map((program, index) => (
-                    <div
-                      key={index}
-                      className={`program-item p-3   d-flex justify-content-between mb-0 align-items-center ${
-                        program.highlighted ? "highlighted" : ""
-                      }`}
-                      onMouseEnter={() => setHoveredProgram(program)}
-                      onMouseLeave={() => setHoveredProgram(null)}
-                    >
-                      <div>
-                        <h5 className="mb-1">
-                          {program?.title}
-                          <span className="highlighted-word position-relative">
-                            {program?.highlightedWords} {""}
-                            <img
-                              src={tradhousingprogramunderline}
-                              className="programunderlines"
-                            />
-                          </span>
-                          {program?.title2}
-                        </h5>
-                        <p className="mb-0 text-muted">{program.description}</p>
-                      </div>
-                      <Link to={program?.link} className="arrow-con">
-                        <FontAwesomeIcon icon={faArrowRight} />
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-
-                <div
-                  data-aos="fade-up"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                >
-                  <h5 className="title font-bold">
-                    Homless <span> Intervention </span> services Of Orange
-                    Country{" "}
-                    <span className=" position-relative">
-                      ( HIS-OC){" "}
-                      <img
-                        src={houseprogramunderline}
-                        className="houseprogramunderline"
-                      />
-                    </span>{" "}
-                  </h5>
-                </div>
-              </div>
-
-              {/* Image Section */}
-              <div className="col-lg-6   d-lg-block">
-                <div className="image-container position-relative">
-                  <img
-                    src={
-                      hoveredProgram ? hoveredProgram.imgSrc : housedefaultimg
-                    }
-                    alt="Hovered Program"
-                    className="img-fluid"
-                    style={{ objectFit: "cover", width: "100%" }}
-                  />
-                  <div className="overlay"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       
         <BuildingFutures />
         {/* BuildingFutures */}
         <Contact />

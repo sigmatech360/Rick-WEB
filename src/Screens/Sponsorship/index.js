@@ -4,6 +4,7 @@ import AOS from "aos";
 import { Modal, Button, Form } from "react-bootstrap";
 import Layout from "../../components/layout";
 import sponsorunderline from "../../Assets/images/sponsorunderline.svg";
+import sponsorshipsectionimg from '../../Assets/images/sponsorshipsectionimg.png'
 
 import createdunderline from "../../Assets/images/createdunderline.png";
 import HeroSection from "../../components/herosection";
@@ -18,6 +19,9 @@ import programlegacy from "../../Assets/images/programlegacy.png";
 import applyemployeebg from "../../Assets/images/applyemployeebg.png";
 import contectbf from "../../Assets/images/contactbg.png";
 import partnerimg from "../../Assets/images/partnerimg.svg";
+
+
+
 function Contactus() {
   useEffect(() => {
     AOS.init();
@@ -282,18 +286,18 @@ function Contactus() {
 
               {/* Right side with map image */}
               <div className="col-lg-6 d-none d-lg-block">
-                <div className="partnerimg-container">
+                <div className=" ">
                   <img
-                    src={partnerimg}
+                    src={sponsorshipsectionimg}
                     alt="Map"
-                    className="img-fluid partnerimg"
+                    className="img-fluid sponsorshipsectionimg "
                   />
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+ 
         <section className="inquiries-call d-flex justify-content-center align-items-center">
           <h2 className=" inquiries-calltitle fw-bold text-white">
             For Any Inquiries Call The Hotline:{" "}

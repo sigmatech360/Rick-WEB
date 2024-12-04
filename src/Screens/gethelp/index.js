@@ -6,7 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa"; // Font Awesome phone icon (React I
 import { FaStar } from "react-icons/fa";
 import helpstar from "../../Assets/images/helpstar.svg";
 import Leadership from "../../components/Leadership/index";
-
+import helpcontecticon from "../../Assets/images/helpcontecticon.svg";
 import HeroSection from "../../components/herosection";
 import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
 import drivingchangecard2 from "../../Assets/images/drivingchangecard2.png";
@@ -23,6 +23,7 @@ import gethelpbg from "../../Assets/images/gethelpbg.png";
 import ourworkbg from "../../Assets/images/ourworkbg.png";
 
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 function GetHelp() {
   useEffect(() => {
@@ -156,19 +157,23 @@ function GetHelp() {
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
-          <div className="container">
+          <div className="container ourprogramgradbg">
+            <div className="text-center ">
+            <h2 className="callus">Call Us</h2>
+            <Link className="contectno" to="tel:(714)%20993-5774"> (714) 993-5774 </Link>
+            </div>
             <p
               className="info-text text-start"
               data-aos="fade-right"
               data-aos-offset="0"
               data-aos-duration="1000"
             >
-              Homeless Intervention Services of Orange County (HIS-OC) is here
-              to support families and individuals facing the hardships of
-              homelessness and housing insecurity. If you or a loved one is in
-              need of assistance, our compassionate team is ready to provide the
-              resources, guidance, and care necessary to help you regain
-              stability and independence.
+              To get help, just call us. We want to talk to you, get to know
+              what you need and help you home 
+              for good. If you are
+              familiar with our programs and you know which one you’d like to
+              hear more about or apply to, dial (714) 993-5774 and the extension
+              number:
             </p>
           </div>
         </section>
@@ -191,7 +196,11 @@ function GetHelp() {
                       borderRadius: "12px",
                     }}
                   >
-                    <FaPhoneAlt size={30} color="#348F99" />
+                    <img
+                      src={helpcontecticon}
+                      className="img-fluid helpcontecticon"
+                    />
+                    {/* <FaPhoneAlt size={30} color="#348F99" /> */}
                     <p className="para mt-3 mb-2 text-muted text-center">
                       {service.description.split(" ").map((word, i) =>
                         word === service.linkText ? (
@@ -238,22 +247,29 @@ function GetHelp() {
 
               {/* Right Section with Description and Button */}
               <div className="col-lg-6">
-                <p className="description mb-4" data-aos="fade-left"
-                        data-aos-offset="0"
-                        data-aos-duration="1000">
+                <p
+                  className="description mb-4"
+                  data-aos="fade-left"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   You can also dial 211 to get information and referrals to free
                   local health and human services programs in Orange County.
                 </p>
-                <p className="description mb-4" data-aos="fade-left"
-                        data-aos-offset="0"
-                        data-aos-duration="1000">
+                <p
+                  className="description mb-4"
+                  data-aos="fade-left"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   The hotline is available 24 hours a day. 2-1-1 is a central
                   point for public information, including times of disaster to
                   help those affected find recovery assistance.
                 </p>
-                <a data-aos="fade-up"
-                        data-aos-offset="0"
-                        data-aos-duration="1000"
+                <a
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
                   href="https://www.211oc.org"
                   className="btn btn-outline-light btn-link"
                 >

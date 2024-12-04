@@ -10,7 +10,7 @@ import HeroSection from "../../components/herosection";
 import Sponsor from "../../components/sponsor";
 import ourworkbg from "../../Assets/images/ourworkbg.png";
 import partnerunderline from "../../Assets/images/programunderline.svg";
-
+import topvolusteersmanimages from '../../Assets/images/topvolusteersmanimages.png'
 import Volunteerman1 from "../../Assets/images/Volunteerman1.png";
 function TopVolunteer() {
   useEffect(() => {
@@ -22,7 +22,7 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
 
     {
@@ -30,7 +30,7 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
 
     {
@@ -38,14 +38,14 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
     {
       animation: "fade-left",
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
 
     {
@@ -53,7 +53,7 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
 
     {
@@ -61,7 +61,7 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
 
     {
@@ -69,7 +69,7 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
 
     {
@@ -77,7 +77,7 @@ function TopVolunteer() {
       name: "Oğuz Yağız Kara",
       description:
         "Is your manuscript collecting more dust than a haunted house? Don’t let your book become a ghost of an idea!",
-      imgSrc: Volunteerman1,
+      imgSrc: topvolusteersmanimages,
     },
   ];
 
@@ -96,9 +96,9 @@ function TopVolunteer() {
         <section className="Volunteerinfo   ">
           <div className="Volunteerinfosecbg  py-5">
             <div className="container">
-              <div className="   row">
+              <div className="row volteersbg">
                 <div
-                  className="col-md-6"
+                  className="col-md-6 "
                   data-aos="fade-right"
                   data-aos-offset="0"
                   data-aos-duration="1000"

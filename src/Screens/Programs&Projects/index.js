@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Leadership from "../../components/Leadership";
 import houseprogramunderline from "../../Assets/images/houseprogramunderline.png";
-
+import connection from '../../Assets/images/connection.png'
 import hopeunderline from "../../Assets/images/hopeunderline.png";
 import HeroSection from "../../components/herosection";
 import drivingchangecard1 from "../../Assets/images/drivingchangecard1.png";
@@ -29,6 +29,7 @@ import Oc from "../../Assets/images/Oc.png";
 import Closet from "../../Assets/images/closet.png";
 import ourworkbg from "../../Assets/images/ourworkbg.png";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // import { FaArrowRight } from "react-icons/fa";
 function ProgramsProjects() {
@@ -122,6 +123,7 @@ function ProgramsProjects() {
 
   const programs = [
     {
+      link: "/transitional-housing-program",
       title: "Transitional    ",
       title2: "Program",
       highlightedWords: "Housing",
@@ -129,6 +131,7 @@ function ProgramsProjects() {
       imgSrc: houseimg,
     },
     {
+      link: "/transitional-aged-youth-shelter",
       title: "Transitional Aged  ",
       title2: "Shelter",
       highlightedWords: "Youth",
@@ -137,6 +140,7 @@ function ProgramsProjects() {
       imgSrc: youth,
     },
     {
+      link: "/transitional-housing-program",
       title: "Home Share  ",
 
       highlightedWords: "OC",
@@ -145,13 +149,15 @@ function ProgramsProjects() {
       imgSrc: Oc,
     },
     {
+      link: "/transitional-aged-youth-shelter",
       title: "Housing & Resource  ",
 
       description: "Guiding To Services And Support",
       highlightedWords: "Connection",
-      imgSrc: Oc,
+      imgSrc: connection,
     },
     {
+      link: "/transitional-housing-program",
       title: "Charity’s Closet",
       description: "Our Trusted Partner",
       highlightedWords: " ",
@@ -166,14 +172,14 @@ function ProgramsProjects() {
         <HeroSection
           heroimg={ourworkbg}
           pagetitle="Our"
-          pagename="  Programs & Projects"
-          title2="Programs & Projects"
+          pagename="  Programs "
+          title2="Programs "
           programprojectsubttle="programprojectsubttle"
           programpojectaboutherounderline="programpojectaboutherounderline"
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
-          <div className="container">
+          <div className="container ourprogramgradbg" >
             <p
               className="info-text text-start"
               data-aos="fade-right"
@@ -226,9 +232,9 @@ function ProgramsProjects() {
                         </h5>
                         <p className="mb-0 text-muted">{program.description}</p>
                       </div>
-                      <div className="arrow-con">
+                      <Link to={program?.link} className="arrow-con" >
                         <FontAwesomeIcon icon={faArrowRight} />
-                      </div>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -261,7 +267,7 @@ function ProgramsProjects() {
                     }
                     alt="Hovered Program"
                     className="img-fluid"
-                    style={{ objectFit: "cover", width: "100%" }}
+                    style={{ objectFit: "cover", width: "100%"  ,   maxHeight: "651px",}}
                   />
                   <div className="overlay"></div>
                 </div>

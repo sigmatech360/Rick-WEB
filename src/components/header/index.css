@@ -143,6 +143,8 @@ nav .btn-warning {
 .navbar {
   font-family: Arial, sans-serif;
   background-color: #fdfbf8;
+  position: relative;
+  z-index: 999!important;
 }
 
 .nav-donate {

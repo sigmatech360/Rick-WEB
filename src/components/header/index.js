@@ -84,15 +84,15 @@ function Header() {
               Mon – Thu 9AM – 5PM, Fri 9AM – 4PM
             </div>
             <div className="separator d-none d-md-block"></div>
-            <div className="header-item d-flex align-items-center">
+            <Link to="tel:(714)%20993-5774" className="header-item d-flex align-items-center">
               <i className="bi bi-telephone-fill me-2"></i>
               (714) 993-5774
-            </div>
+            </Link>
             <div className="separator d-none d-md-block"></div>
-            <div className="header-item d-flex align-items-center">
+            <Link to={"mailto:info@his-oc.org"} className="header-item d-flex align-items-center">
               <i className="bi bi-envelope me-2"></i>
               info@his-oc.org
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -136,7 +136,7 @@ function Header() {
                   </li>
                   <li className="nav-item dropdown">
                     <Link className={`nav-link ${location.pathname.includes('/ourwork') ? 'active' : ''}`} to="/ourwork">
-                      Our Works
+                      Our Work
                     </Link>
                   </li>
                   <li className="nav-item">

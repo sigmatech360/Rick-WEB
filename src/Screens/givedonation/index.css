@@ -15,6 +15,26 @@
 
  
 
+.ourprogramgradbg{
+  position: relative;
+}
+
+.ourprogramgradbg::before {
+  left: 137px !important;
+ content: "";
+ position: absolute;
+ top: -71px!important ;
+ 
+ background: url('../../Assets/images/volusteergradiantimg.png') 0% 0% no-repeat;
+ background-size: contain;
+ padding-left: 0;
+ height: 179%;
+ width: 205%;
+ z-index: -1;
+
+}
+
+
 .how-we-do {
   left: 0px;
   /* width: 175px; */

@@ -647,3 +647,52 @@ max-width: 100%;
   color: #333333;
   text-decoration: none;
 } */
+
+
+
+.ourprogramgradbg{
+  position: relative;
+}
+
+.ourprogramgradbg::before {
+  left: 137px !important;
+ content: "";
+ position: absolute;
+ top: -71px!important ;
+ 
+ background: url('../../Assets/images/volusteergradiantimg.png') 0% 0% no-repeat;
+ background-size: contain;
+ padding-left: 0;
+ height: 179%;
+ width: 205%;
+ z-index: -1;
+
+}
+
+
+.helpcontecticon{
+width: 32px!important;  
+}
+
+
+.contectno{
+  text-decoration: underline !important;
+  text-decoration-color: #3c787e !important;
+  text-decoration-thickness: 2px;
+  /* border-bottom: 1px solid; */
+  color: #3c787e;
+  font-weight: 600 !important;
+  font-size: 43px;
+}
+
+
+
+.callus{
+      /* text-decoration: underline !important; */
+      text-decoration-color: #3c787e !important;
+      text-decoration-thickness: 2px;
+      /* border-bottom: 1px solid; */
+      color: #1fbac5;
+      font-weight: 600 !important;
+      font-size: 43px;
+}

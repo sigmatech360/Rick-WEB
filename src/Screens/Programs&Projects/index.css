@@ -123,7 +123,7 @@
 
  .programpojectaboutherounderline {
   position: absolute;
-  bottom: -28px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   height: auto;
@@ -132,6 +132,39 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ourprogramgradbg{
+  position: relative;
+}
+
+.ourprogramgradbg::before {
+  
+ content: "";
+ position: absolute;
+ top: -71px!important ;
+ left: 137px !important;
+ background: url('../../Assets/images/volusteergradiantimg.png') 0% 0% no-repeat;
+ background-size: contain;
+ padding-left: 0;
+ height: 179%;
+ width: 205%;
+ z-index: -1;
+
+}
 
 
 
@@ -609,12 +642,12 @@
 
 
 .info-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333333;
-  max-width: 800px;
-  margin: 0 auto;
-  opacity: 1;
+  font-size: 1.1rem!important;
+  line-height: 1.6!important;
+  color: #333333!important;
+  max-width: 800px!important;
+  margin: 0 auto!important;
+  opacity: 1!important;
 
 
 

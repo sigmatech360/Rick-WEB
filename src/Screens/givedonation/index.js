@@ -234,9 +234,9 @@ function Givedonation() {
                   <img className="creadetimg" src={donatecard2} />
                   {/* <FaPhoneAlt size={30} color="#EBFEEE" /> */}
                   <p className="extension font-weight-bold  mb-0  ">
-                    Give Now by{" "}
+                  Give now by  {" "}
                     <spna className="credit position-relative">
-                      Credit{" "}
+                    Check{" "}
                       <img
                         className="createdunderline"
                         src={createdunderline}
@@ -267,15 +267,8 @@ function Givedonation() {
                   <img className="creadetimg" src={donatecard3} />
                   {/* <FaPhoneAlt size={30} color="#348F99" /> */}
                   <p className="extension font-weight-bold  mb-0  ">
-                    Give Now by{" "}
-                    <spna className="credit position-relative">
-                      Credit{" "}
-                      <img
-                        className="createdunderline"
-                        src={createdunderline}
-                      />
-                    </spna>{" "}
-                    Card
+                  Wishlist
+                   
                   </p>
                   <p className="para   mb-2 text-muted  ">
                     #giftsforall #hisoc #unhoused #underprivileged

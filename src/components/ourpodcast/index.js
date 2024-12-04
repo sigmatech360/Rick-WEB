@@ -199,7 +199,7 @@ const Ourpodcasts = () => {
             </div>
           </div>
 
-          <button className="viewall"> View all Podcast</button>
+          {/* <button className="viewall"> View all Podcast</button> */}
           {/* Repeat this block for other podcast cards */}
         </div>
       </div>
