@@ -32,6 +32,7 @@ import tradhousingprogramunderline from "../../Assets/images/tradhousingprogramu
 // import { FaArrowRight } from "react-icons/fa";
 
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 function OurWork() {
   useEffect(() => {
@@ -123,6 +124,7 @@ function OurWork() {
 
   const programs = [
     {
+      link: "/transitional-housing-program",
       title: "Transitional    ",
       title2: "Program",
       highlightedWords: "Housing",
@@ -130,6 +132,7 @@ function OurWork() {
       imgSrc: houseimg,
     },
     {
+      link: "/transitional-aged-youth-shelter",
       title: "Transitional Aged  ",
       title2: "Shelter",
       highlightedWords: "Youth",
@@ -138,6 +141,7 @@ function OurWork() {
       imgSrc: youth,
     },
     {
+      link: "/transitional-housing-program",
       title: "Home Share  ",
 
       highlightedWords: "OC",
@@ -146,6 +150,7 @@ function OurWork() {
       imgSrc: Oc,
     },
     {
+      link: "/transitional-aged-youth-shelter",
       title: "Housing & Resource  ",
 
       description: "Guiding To Services And Support",
@@ -153,6 +158,7 @@ function OurWork() {
       imgSrc: Oc,
     },
     {
+      link: "/transitional-housing-program",
       title: "Charity’s Closet",
       description: "Our Trusted Partner",
       highlightedWords: " ",
@@ -228,17 +234,18 @@ function OurWork() {
                         </h5>
                         <p className="mb-0 text-muted">{program.description}</p>
                       </div>
-                      <div className="arrow-con">
+                      <Link to={program?.link} className="arrow-con">
                         <FontAwesomeIcon icon={faArrowRight} />
-                      </div>
+                      </Link>
                     </div>
                   ))}
                 </div>
 
-                <div   data-aos="fade-up"
-                        data-aos-offset="0"
-                        data-aos-duration="1000"
->
+                <div
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <h5 className="title font-bold">
                     Homless <span> Intervention </span> services Of Orange
                     Country{" "}

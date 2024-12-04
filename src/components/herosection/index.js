@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./index.css";
 import heropage2 from "../../Assets/images/heropage2.png";
 import aboutherounderline from "../../Assets/images/aboutherounderline.png";
-
+import ourprogramsunderline from '../../Assets/images/ourprogramsunderline.svg'
 import AOS from "aos";
 
 function HeroSection(props) {
@@ -33,7 +33,7 @@ function HeroSection(props) {
                 {/* <img className="aboutherounderline" src={aboutherounderline} alt="underline decoration" /> */}
                 <img
                   className={props?.programpojectaboutherounderline}
-                  src={aboutherounderline}
+                  src={ourprogramsunderline}
                   alt="underline decoration"
                 />
               </span>
