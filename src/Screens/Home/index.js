@@ -44,6 +44,8 @@ import Ourpodcasts from "../../components/ourpodcast";
 import Events from "../../components/events";
 import { useNavigate } from "react-router-dom";
 function Home() {
+
+ 
   useEffect(() => {
     AOS.init();
   }, []);

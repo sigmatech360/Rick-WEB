@@ -11,7 +11,8 @@ import TopVolunteer from "../Screens/TopVolunteer";
 import Ourpodcast from "../Screens/ourpodcast";
  import Transitionalagedyouthshelter from '../Screens/Transitionalagedyouthshelter'
  import TransitionalHousingProgram from '../Screens/TransitionalHousingProgram'
-
+ import CommunityOutreachDay from '../Screens/communityoutreachday'
+import Event from '../Screens/event'
 export default function UserRouter() {
   return (
     <BrowserRouter basename="/His-oc">
@@ -28,9 +29,10 @@ export default function UserRouter() {
         <Route path="/ourpodcast" element={<Ourpodcast/>} />
         <Route path="/transitional-housing-program" element={<TransitionalHousingProgram/>} />
         <Route path="/transitional-aged-youth-shelter" element={<Transitionalagedyouthshelter/>} />
- 
-          
-        {/* <Route path="*" element={<Error />} /> */}
+        <Route path="/event" element={<Event/>} />
+        <Route path="/communityOutreachDay" element={<CommunityOutreachDay/>} />
+         
+         
       </Routes>
     </BrowserRouter>
   );

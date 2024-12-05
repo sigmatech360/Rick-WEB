@@ -1,0 +1,291 @@
+/* Community Section */
+.communityOutreachDay {
+  background: #fdfbf8 !important;
+}
+
+ 
+
+.todaybtn {
+  color: #563b3b !important;
+  font-weight: 100 !important;
+  border-radius: 26px;
+  padding: 6px 24px;
+  border: none;
+  background: #fdfbf8;
+  border: 1px solid #348f99;
+}
+
+.todaybtn:hover {
+  color: white;
+  font-weight: 100 !important;
+  border-radius: 26px;
+  padding: 6px 24px;
+  border: none;
+  background: #348f99;
+  border: 1px solid #348f99;
+}
+
+.communityOutreachDayschedual {
+  color: #6e6e6f;
+}
+
+.communityOutreachDayschedualdivider {
+  height: 21px !important;
+  border-right: 1px solid #6e6e6f;
+}
+
+.communityOutreachDaytitle {
+  font-weight: bold;
+  font-size: 3rem;
+  /* width: 50%; */
+  color: #333333;
+}
+
+.communityOutreachDaypara {
+  color: #4d4d4f;
+  width: 80%;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Monday Text */
+.monday-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monday2 {
+  margin-left: 5px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Phones) */
+@media (max-width: 576px) {
+  .communityOutreachDaytitle {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .communityOutreachDaypara {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .monday2 {
+    font-size: 1rem;
+  }
+
+  .todaybtn {
+    padding: 6px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust layout for smaller devices */
+  .communityOutreachDay .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .col-md-8,
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  } */
+
+  .communityOutreachDayschedual {
+    font-size: 0.9rem;
+  }
+
+  .communityOutreachDayschedualdivider {
+    height: 14px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  .communityOutreachDaytitle {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .communityOutreachDaypara {
+    width: 85%;
+    font-size: 1rem;
+  }
+
+  .monday2 {
+    font-size: 1.1rem;
+  }
+
+  .todaybtn {
+    padding: 6px 20px;
+    font-size: 1rem;
+  }
+
+  .communityOutreachDay .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .col-md-8,
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  } */
+
+  .communityOutreachDayschedual {
+    font-size: 1rem;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .communityOutreachDaytitle {
+    font-size: 3rem;
+    width: 50%;
+  }
+
+  .communityOutreachDaypara {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .monday2 {
+    font-size: 1.3rem;
+  }
+
+  .todaybtn {
+    padding: 6px 24px;
+    font-size: 1.1rem;
+  }
+
+  .communityOutreachDay .row {
+    flex-direction: row;
+  }
+
+  /* .col-md-8,
+  .col-md-4 {
+    width: 48%;
+    margin-right: 20px;
+  } */
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+  .communityOutreachDaytitle {
+    font-size: 3.1rem;
+    width: 100%;
+  }
+
+  .communityOutreachDaypara {
+    width: 96%;
+    font-size: 1rem;
+    color: #4D4D4F;
+  }
+
+  .monday2 {
+    font-size: 1.4rem;
+  }
+
+  .todaybtn {
+    padding: 8px 30px;
+    font-size: 1.2rem;
+  }
+
+  /* .communityOutreachDay .row {
+    flex-direction: row;
+  } */
+
+  /* .col-md-8,
+  .col-md-4 {
+    width: 48%;
+    margin-right: 20px;
+  } */
+}
+
+/* /communityOutreachDayOutreachDay */
+
+.communityOutreachDayheader {
+  color: #6e6e6f;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.communityimg {
+  max-width: 100% !important;
+  height: auto;
+  width: 1186px;
+  height: 616px;
+  border-radius: 50px;
+}
+
+.VolunteerOrientationblgimg {
+  height: auto;
+  max-width: 100%;
+  width: 177px;
+}
+
+.VolunteerOrientationblg {
+  background: white;
+  padding: 20px;
+  border-radius: -26px;
+  box-shadow: 0px 3px 30px #00000014;
+  background: white;
+  padding: 20px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 3px 30px #00000014;
+  width: 521px;
+}
+
+.VolunteerOrientationblgtitledate {
+  color: #6e6e6f;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.VolunteerOrientationblgtitledatereade {
+  color: #348f99;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.VolunteerOrientationblg1 {
+  background: white;
+  padding: 20px;
+  border-radius: -26px;
+  box-shadow: 0px 3px 30px #00000014;
+  background: white;
+  padding: 20px;
+  /* border-top-left-radius: 23px; */
+  /* border-top-right-radius: 23px; */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 3px 30px #00000014;
+  width: 521px;
+}
+
+.VolunteerOrientationblg2 {
+  background: white;
+  padding: 20px;
+  border-radius: -26px;
+  box-shadow: 0px 3px 30px #00000014;
+  background: white;
+  padding: 20px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0px 3px 30px #00000014;
+  width: 521px;
+}

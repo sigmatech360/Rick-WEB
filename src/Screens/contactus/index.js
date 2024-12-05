@@ -225,7 +225,7 @@ function Contactus() {
               </div>
 
               {/* Right side with map image */}
-              <div className="col-lg-6 d-none d-lg-block">
+              <div className="col-lg-6   d-lg-block">
                 <img src={mapimg} alt="Map" className="img-fluid map-image" />
               </div>
             </div>

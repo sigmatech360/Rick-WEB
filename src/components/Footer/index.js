@@ -159,11 +159,7 @@ function Footer() {
                     Give Donation
                     </Link>
                   </li>
-                  <li>
-                    <Link onClick={scrollToTop}  to={"/"} className="">
-                      Financials
-                    </Link>
-                  </li>
+                
                   <li>
                     <Link  onClick={scrollToTop} to={"/contactus"} className="">
                       Contact Us

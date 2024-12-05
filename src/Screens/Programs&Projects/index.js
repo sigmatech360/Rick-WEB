@@ -259,7 +259,7 @@ function ProgramsProjects() {
               </div>
 
               {/* Image Section */}
-              <div className="col-lg-6 d-none d-lg-block">
+              <div className="col-lg-6   d-lg-block">
                 <div className="image-container position-relative">
                   <img
                     src={

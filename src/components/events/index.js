@@ -8,13 +8,20 @@ import eventcard2 from "../../Assets/images/eventcard2.png";
 
 import eventcard3 from "../../Assets/images/eventcard3.png";
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 const Events = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   useEffect(() => {
     AOS.init();
   }, []);
 
   const events = [
     {
+      link:"/event",
       animation: "fade-right",
       title: "Community Outreach Day",
       date: "June 15th, 2024",
@@ -23,6 +30,7 @@ const Events = () => {
       bgImage: eventcard1,
     },
     {
+      link:"/event",
       animation: "fade-up",
       title: "Homeless Awareness",
       date: "October 9th, 2024",
@@ -31,6 +39,7 @@ const Events = () => {
       bgImage: eventcard2,
     },
     {
+      link:"/event",
       animation: "fade-left",
       title: "Volunteer Orientation",
       date: "November 2nd, 2024",
@@ -88,7 +97,7 @@ Events
         <div className="row g-4">
           {events.map((event, index) => (
             <div key={index} className="evemtcard col-md-4 mb-4">
-              <div
+              <Link to={event?.link} onClick={scrollToTop}
                 data-aos={event?.animation}
                 data-aos-offset="0"
                 data-aos-duration="1000"
@@ -105,7 +114,7 @@ Events
                 <p className="card-text">
                   <i className="bi bi-geo-alt"></i> {event.location}
                 </p>
-              </div>
+              </Link>
             </div>
           ))}
           <button className="eventviewallbtn">View all Events</button>
