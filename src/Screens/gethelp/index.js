@@ -157,7 +157,7 @@ function GetHelp() {
         />
 
         <section className="info-section d-flex justify-content-center align-items-center py-5">
-          <div className="container ourprogramgradbg">
+          <div className="container gethelpgradbg">
             <div className="text-center ">
             <h2 className="callus">Call Us</h2>
             <Link className="contectno" to="tel:(714)%20993-5774"> (714) 993-5774 </Link>

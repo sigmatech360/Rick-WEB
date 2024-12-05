@@ -650,15 +650,15 @@ max-width: 100%;
 
 
 
-.ourprogramgradbg{
+.gethelpgradbg{
   position: relative;
 }
 
-.ourprogramgradbg::before {
-  left: 137px !important;
+.gethelpgradbg::before {
+  left: 0px !important;
  content: "";
  position: absolute;
- top: -71px!important ;
+ top: 0px!important ;
  
  background: url('../../Assets/images/volusteergradiantimg.png') 0% 0% no-repeat;
  background-size: contain;
