@@ -47,7 +47,7 @@ const learnnavigate = () =>{
                       Community Outreach Day
                     </h2>
 
-                    <div className="communityschedual d-flex gap-2">
+                    <div className="communityschedual d-flex flex-wrap gap-2">
                       <p className="d-flex gap-2 align-items-center">
                         {" "}
                         <FiMapPin />
@@ -99,7 +99,7 @@ const learnnavigate = () =>{
                       Community Outreach Day
                     </h2>
 
-                    <div className="communityschedual d-flex gap-2">
+                    <div className="communityschedual d-flex flex-wrap gap-2">
                       <p className="d-flex gap-2 align-items-center">
                         {" "}
                         <FiMapPin />
@@ -147,7 +147,7 @@ const learnnavigate = () =>{
                       Community Outreach Day
                     </h2>
 
-                    <div className="communityschedual d-flex gap-2">
+                    <div className="communityschedual d-flex flex-wrap gap-2">
                       <p className="d-flex gap-2 align-items-center">
                         {" "}
                         <FiMapPin />
@@ -195,7 +195,7 @@ const learnnavigate = () =>{
                       Community Outreach Day
                     </h2>
 
-                    <div className="communityschedual d-flex gap-2">
+                    <div className="communityschedual d-flex flex-wrap gap-2">
                       <p className="d-flex gap-2 align-items-center">
                         {" "}
                         <FiMapPin />
