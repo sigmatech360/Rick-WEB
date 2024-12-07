@@ -32,7 +32,7 @@ const learnnavigate = () =>{
         <section className="community  ">
           <div className="container  py-5">
             <div className="row">
-              <div className="mt-5 mb-4 d-flex gap-4">
+              <div className="mt-5 mb-4 d-flex flex-wrap gap-4">
                 <button className="todaybtn">Today</button>
                 <button className="todaybtn">Upcoming Events</button>
               </div>

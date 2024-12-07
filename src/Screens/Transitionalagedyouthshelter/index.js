@@ -1,241 +1,140 @@
 import "./index.css";
-import housingprogramvideo from "../../Assets/images/housingprogramvideo.mp4";
+
 import Layout from "../../components/layout";
 import React, { useState, useEffect } from "react";
 
-import housingprogramimgage from "../../Assets/images/housingprogramimgage.jpg";
-
-import HeroSection from "../../components/herosection";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Contact from "../../components/contact";
+import { MdArrowOutward } from "react-icons/md";
+
 import Sponsor from "../../components/sponsor";
 import houseimg from "../../Assets/images/houseimg.png";
 import youth from "../../Assets/images/youth.png";
 import Oc from "../../Assets/images/Oc.png";
 import Closet from "../../Assets/images/closet.png";
-import housungprogramimg2 from "../../Assets/images/housungprogramimg2.jpg";
+
 import AOS from "aos";
+
+import VolunteerOrientationimg from "../../Assets/images/VolunteerOrientationimg.png";
+
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { RiCalendar2Line } from "react-icons/ri";
+import { FiMapPin } from "react-icons/fi";
+import { CiClock2 } from "react-icons/ci";
+import communityimg from "../../Assets/images/communityimg.png";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Transitionalagedyouthshelter() {
   useEffect(() => {
     AOS.init();
   }, []);
-  const PrevArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <button
-        type="button"
-        className="slick-arrow slick-prev mb-2 "
-        onClick={onClick}
-      >
-        <span className="arrow-icon">
-          {" "}
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </span>
-      </button>
-    );
-  };
 
-  const NextArrow = (props) => {
-    const { onClick } = props;
-    return (
-      <button
-        type="button"
-        className="slick-arrow slick-next mb-2"
-        onClick={onClick}
-      >
-        <span className="arrow-icon">
-          {" "}
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </span>
-      </button>
-    );
-  };
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1200, // Large screens
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 992, // Medium screens
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768, // Small screens
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  const programs = [
+  const programslist = [
     {
-      title: "Transitional    ",
-      title2: "Program",
-      highlightedWords: "Housing",
-      description: "Providing Shelter and Reunification for Families",
-      imgSrc: houseimg,
+      title: "Transitional Aged Youth (TAY)",
     },
     {
-      title: "Transitional Aged  ",
-      title2: "Shelter",
-      highlightedWords: "Youth",
-      description: "Supporting Transitional Age Youth",
-
-      imgSrc: youth,
+      title: "Transitional Housing Program",
     },
     {
-      title: "Home Share  ",
-
-      highlightedWords: "OC",
-      description: "Helping College Students Transition",
-
-      imgSrc: Oc,
+      title: " Home Share / Home Share PLUS",
     },
     {
-      title: "Housing & Resource  ",
-
-      description: "Guiding To Services And Support",
-      highlightedWords: "Connection",
-      imgSrc: Oc,
+      title: " Housing Connection Program",
     },
     {
-      title: "Charity’s Closet",
-      description: "Our Trusted Partner",
-      highlightedWords: " ",
-      imgSrc: Closet,
+      title: " Resource Centers",
     },
   ];
-  const [hoveredProgram, setHoveredProgram] = useState(null);
-
-  // modal give responsive code in react using react-bootstrap
   return (
     <>
       <Layout>
-        <HeroSection
-          heroimg={youth}
-          pagetitle="Our"
-          pagename="Programs"
-          title2="Transitional Aged Youth Shelter"
-          programpojectaboutherounderline="traditionalhosingprogramunderline"
-          programprojectsubttle="givedonationsubtitle"
-        />
-
-        <section className="info-section d-flex justify-content-center align-items-center py-5">
+        <section className="communityOutreachDay">
           <div className="container">
-            <div className="video-wrapper">
-              <video
-                className="centered-video"
-                src={housingprogramvideo}
-                controls
-              />
-            </div>
-
+            <Link to={"/our-programs"} className="communityOutreachDayheader d-flex gap-2 align-items-center">
+              <MdKeyboardDoubleArrowLeft />
+              Program Dedail
+            </Link>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-12 mt-5">
+                <h2 className="communityOutreachDaytitle">
+                  Transitional Aged Youth Shelter
+                </h2>
+              </div>
+
+              <div className="col-md-12 mt-4">
                 <img
-                  src={housingprogramimgage}
-                  className="img-fluid"
-                  data-aos="fade-right"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
+                  src={communityimg}
+                  alt="Community Event"
+                  className="communityimg"
                 />
               </div>
-              <div className="col-md-6">
-                <p
-                  className="traditionalhousingprogramtxt text-start"
-                  data-aos="fade-left"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                >
-                  Our Transitional Housing Program is for homeless families, and
-                  often we work with families who are in reunification stages
-                  with their children. Helping the parents heal and assisting
-                  the family reunify is a complex and essential job. We are
-                  committed to assisting homeless families to achieve stable,
-                  permanent housing and financial independence. Our 54-bed
-                  transitional housing program is designed to successfully
-                  transition homeless families with children off the streets and
-                  into safe, permanent housing. When a homeless family enters
-                  our program, they need a safe place in a loving community to
-                  help them overcome their emotional, spiritual and physical
-                  trauma. We tailor our service delivery to address each
-                  family’s goals to become self-sufficient.
+
+              <div className="col-md-6 mt-4">
+                <p className="communityOutreachDaypara mb-4">
+                  Combining Housing Education and Skills for Students. A
+                  transitional 12-24 month program for 18-24-year-olds.
+                  Residents attend college, trade school, or complete a high
+                  school diploma/GED requirements. Many of our residents were in
+                  the foster care system and do not have help navigating the
+                  education system. Our case managers help them set personal
+                  goals and connect them to appropriate resources.
                 </p>
+
+                <p className="communityOutreachDaypara mb-4">
+                  Combining Housing Education and Skills for Students. A
+                  transitional 12-24 month program for 18-24-year-olds.
+                  Residents attend college, trade school, or complete a high
+                  school diploma/GED requirements. Many of our residents were in
+                  the foster care system and do not have help navigating the
+                  education system. Our case managers help them set personal
+                  goals and connect them to appropriate resources.
+                </p>
+
+                <p className="communityOutreachDaypara">
+                  No longer children, but certainly not yet adults, the young
+                  people we serve are often lost in the shuffle of support
+                  programs. We consider their specific needs in our program
+                  choices, home setup, rules and regulations of the program, and
+                  all other aspects. All TAY residents receive the same services
+                  as our families in shelter, however they have a specialized
+                  case manager as well as additional job training support
+                  through our partner, Orange County.
+                </p>
+
+                <p className="communityOutreachDaypara mb-4">
+                  Combining Housing Education and Skills for Students. A
+                  transitional 12-24 month program for 18-24-year-olds.
+                  Residents attend college, trade school, or complete a high
+                  school diploma/GED requirements. Many of our residents were in
+                  the foster care system and do not have help navigating the
+                  education system. Our case managers help them set personal
+                  goals and connect them to appropriate resources.
+                </p>
+              </div>
+
+              <div className="programs1 col-md-5 mt-4">
+                {programslist?.map(( data, index) => (
+                  <div
+                    key={index}
+                    className="item d-flex justify-content-between align-items-center my-3"
+                  >
+                    <h4 className="mb-0">{data?.title}</h4>
+                    <button className="btn d-flex align-items-center">
+                      <MdArrowOutward className="ms-2" size={20} />
+                    </button>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
+          <Sponsor />
         </section>
-
-        <section className="info-section d-flex justify-content-center align-items-center py-5">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <p
-                  className="traditionalhousingprogramtxt text-start"
-                  data-aos="fade-right"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                >
-                  Entering our program, a homeless family might face
-                  difficulties unique to their situation. The first step is to
-                  address their immediate, basic needs for shelter, food, and
-                  clothing. But more importantly, we need to address what led
-                  them to their homelessness. We pair all residents with a Case
-                  Manager who walks with them as they overcome barriers to
-                  permanent housing and financial self-sufficiency. The Case
-                  Manager helps them establish an individualized case plan,
-                  including short and long-term goals and objectives. We work
-                  with all the people in our Transitional Housing Program,
-                  providing concrete action steps for them to take to transition
-                  out of homelessness:
-                </p>
-                <ul
-                  data-aos="fade-right"
-                  data-aos-offset="0"
-                  data-aos-duration="1000"
-                >
-                  <li>clear DMV records so that they can drive,</li>
-                  <li>stabilize mental health,</li>
-                  <li>
-                    provide support to navigate through family reunification
-                  </li>
-                  <li>obtain full-time employment</li>
-                  <li>increase income, pay off debt, save for emergencies</li>
-                  <li>learn the importance of healthy parenting practices</li>
-                </ul>
-              </div>
-              <div className="col-md-6">
-                <img src={housungprogramimg2} className="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* <BuildingFutures /> */}
-        {/* BuildingFutures */}
-        <Contact />
-
-        {/* <Leadership /> */}
-        <Sponsor />
       </Layout>
     </>
   );
 }
+ 
 
 export default Transitionalagedyouthshelter;

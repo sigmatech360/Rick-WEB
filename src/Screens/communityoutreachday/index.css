@@ -1,215 +1,8 @@
-/* Community Section */
+/* General Styles */
 .communityOutreachDay {
-  background: #fdfbf8 !important;
-}
-
- 
-
-.todaybtn {
-  color: #563b3b !important;
-  font-weight: 100 !important;
-  border-radius: 26px;
-  padding: 6px 24px;
-  border: none;
   background: #fdfbf8;
-  border: 1px solid #348f99;
+  padding: 2rem 0;
 }
-
-.todaybtn:hover {
-  color: white;
-  font-weight: 100 !important;
-  border-radius: 26px;
-  padding: 6px 24px;
-  border: none;
-  background: #348f99;
-  border: 1px solid #348f99;
-}
-
-.communityOutreachDayschedual {
-  color: #6e6e6f;
-}
-
-.communityOutreachDayschedualdivider {
-  height: 21px !important;
-  border-right: 1px solid #6e6e6f;
-}
-
-.communityOutreachDaytitle {
-  font-weight: bold;
-  font-size: 3rem;
-  /* width: 50%; */
-  color: #333333;
-}
-
-.communityOutreachDaypara {
-  color: #4d4d4f;
-  width: 80%;
-  font-weight: 400;
-  font-size: 1rem;
-}
-
-/* Monday Text */
-.monday-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.monday2 {
-  margin-left: 5px;
-  font-weight: 800;
-  font-size: 1.3rem;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Media Queries for Responsiveness */
-
-/* Small Devices (Phones) */
-@media (max-width: 576px) {
-  .communityOutreachDaytitle {
-    font-size: 2rem;
-    width: 100%;
-  }
-
-  .communityOutreachDaypara {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  .monday2 {
-    font-size: 1rem;
-  }
-
-  .todaybtn {
-    padding: 6px 16px;
-    font-size: 0.9rem;
-  }
-
-  /* Adjust layout for smaller devices */
-  .communityOutreachDay .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* .col-md-8,
-  .col-md-4 {
-    width: 100%;
-    margin-bottom: 20px;
-  } */
-
-  .communityOutreachDayschedual {
-    font-size: 0.9rem;
-  }
-
-  .communityOutreachDayschedualdivider {
-    height: 14px;
-  }
-}
-
-/* Medium Devices (Tablets) */
-@media (max-width: 768px) {
-  .communityOutreachDaytitle {
-    font-size: 2.5rem;
-    width: 100%;
-  }
-
-  .communityOutreachDaypara {
-    width: 85%;
-    font-size: 1rem;
-  }
-
-  .monday2 {
-    font-size: 1.1rem;
-  }
-
-  .todaybtn {
-    padding: 6px 20px;
-    font-size: 1rem;
-  }
-
-  .communityOutreachDay .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* .col-md-8,
-  .col-md-4 {
-    width: 100%;
-    margin-bottom: 20px;
-  } */
-
-  .communityOutreachDayschedual {
-    font-size: 1rem;
-  }
-}
-
-/* Large Devices (Desktops) */
-@media (min-width: 992px) {
-  .communityOutreachDaytitle {
-    font-size: 3rem;
-    width: 50%;
-  }
-
-  .communityOutreachDaypara {
-    width: 80%;
-    font-size: 1rem;
-  }
-
-  .monday2 {
-    font-size: 1.3rem;
-  }
-
-  .todaybtn {
-    padding: 6px 24px;
-    font-size: 1.1rem;
-  }
-
-  .communityOutreachDay .row {
-    flex-direction: row;
-  }
-
-  /* .col-md-8,
-  .col-md-4 {
-    width: 48%;
-    margin-right: 20px;
-  } */
-}
-
-/* Extra Large Devices (Large Desktops) */
-@media (min-width: 1200px) {
-  .communityOutreachDaytitle {
-    font-size: 3.1rem;
-    width: 100%;
-  }
-
-  .communityOutreachDaypara {
-    width: 96%;
-    font-size: 1rem;
-    color: #4D4D4F;
-  }
-
-  .monday2 {
-    font-size: 1.4rem;
-  }
-
-  .todaybtn {
-    padding: 8px 30px;
-    font-size: 1.2rem;
-  }
-
-  /* .communityOutreachDay .row {
-    flex-direction: row;
-  } */
-
-  /* .col-md-8,
-  .col-md-4 {
-    width: 48%;
-    margin-right: 20px;
-  } */
-}
-
-/* /communityOutreachDayOutreachDay */
 
 .communityOutreachDayheader {
   color: #6e6e6f;
@@ -217,75 +10,258 @@
   font-weight: 500;
 }
 
-.communityimg {
-  max-width: 100% !important;
-  height: auto;
-  width: 1186px;
-  height: 616px;
-  border-radius: 50px;
+.communityOutreachDaytitle {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #333333;
 }
+
+.communityOutreachDaypara {
+  color: #4d4d4f;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.communityOutreachDayschedual {
+  color: #6e6e6f;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.communityOutreachDayschedualdivider {
+  height: 20px;
+  border-right: 1px solid #6e6e6f;
+}
+
+.communityimg {
+  max-width: 100% !important; /* Ensures it scales within its container */
+  width: 90%; /* Sets the image to occupy the full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 20px; /* Keeps rounded corners */
+  margin: 2rem 0; /* Adds spacing above and below the image */
+}
+
+/* .VolunteerOrientationblg,
+.VolunteerOrientationblg1,
+.VolunteerOrientationblg2 {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+} */
+
+
+.VolunteerOrientationblg{
+  background: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  height: 299px;
+  padding: 20px;
+  
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: black;
+  overflow: hidden;
+}
+
+
+
+.VolunteerOrientationblg .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .VolunteerOrientationblgimg {
   height: auto;
   max-width: 100%;
-  width: 177px;
-}
-
-.VolunteerOrientationblg {
-  background: white;
-  padding: 20px;
-  border-radius: -26px;
-  box-shadow: 0px 3px 30px #00000014;
-  background: white;
-  padding: 20px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  box-shadow: 0px 3px 30px #00000014;
-  width: 521px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .VolunteerOrientationblgtitledate {
   color: #6e6e6f;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .VolunteerOrientationblgtitledatereade {
   color: #348f99;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 3px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.VolunteerOrientationblg1 {
-  background: white;
-  padding: 20px;
-  border-radius: -26px;
-  box-shadow: 0px 3px 30px #00000014;
-  background: white;
-  padding: 20px;
-  /* border-top-left-radius: 23px; */
-  /* border-top-right-radius: 23px; */
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  box-shadow: 0px 3px 30px #00000014;
-  width: 521px;
+.VolunteerOrientationblg h4 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
-.VolunteerOrientationblg2 {
-  background: white;
-  padding: 20px;
-  border-radius: -26px;
-  box-shadow: 0px 3px 30px #00000014;
-  background: white;
-  padding: 20px;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  box-shadow: 0px 3px 30px #00000014;
-  width: 521px;
+/* Buttons */
+.todaybtn {
+  color: #563b3b;
+  font-weight: 400;
+  border-radius: 26px;
+  padding: 6px 24px;
+  border: 1px solid #348f99;
+  background: #fdfbf8;
+  transition: all 0.3s ease;
 }
+
+.todaybtn:hover {
+  color: white;
+  background: #348f99;
+  border-color: #348f99;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  .communityOutreachDaytitle {
+    font-size: 2rem;
+  }
+
+  .communityOutreachDaypara {
+    font-size: 0.9rem;
+  }
+
+  .communityOutreachDayschedual {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .VolunteerOrientationblgimg {
+    width: 100px;
+  }
+
+  .VolunteerOrientationblg h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .communityOutreachDaytitle {
+    font-size: 2.2rem;
+  }
+
+  .communityOutreachDaypara {
+    font-size: 1rem;
+  }
+
+  .VolunteerOrientationblgimg {
+    width: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communityOutreachDaytitle {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communityOutreachDaytitle {
+    font-size: 3.1rem;
+  }
+}
+
+.timeline-dotparent {
+  background: #fdfbf8 !important;
+  border: 1px solid #348f99;
+  /* padding: 9px; */
+  border-radius: 115%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 26px;
+  height: 26px;
+  left: -13px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 0px;
+  border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+}
+.timeline-dot {
+  /* position: absolute; */
+  left: 0.5px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #348f99;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.event {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+@media (max-width: 576px) {
+  .timeline-content {
+    margin-left: 15px;
+  }
+
+  .time {
+    font-size: 0.8rem;
+  }
+
+  .event {
+    font-size: 0.9rem;
+  }
+}
+
+/* .timeline:before {
+  top: 80px;
+  bottom: 90px;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+ 
+  margin-left: -1.5px;
+} */
