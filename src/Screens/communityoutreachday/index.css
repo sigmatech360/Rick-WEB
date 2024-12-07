@@ -53,34 +53,34 @@
   margin-bottom: 1.5rem;
 } */
 
-
-.VolunteerOrientationblg{
+.VolunteerOrientationblg {
   background: white;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   margin-bottom: 1.5rem;
-  height: 299px;
-  padding: 20px;
-  
+  padding: 22px 30px;
+  /* display: flex
+; */
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: black;
   overflow: hidden;
+
 }
 
 
 
-.VolunteerOrientationblg .item{
+
+
+.VolunteerOrientationblg .item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  border-bottom: 1px solid #D5D5D5;
 }
-
-
-
 
 
 
