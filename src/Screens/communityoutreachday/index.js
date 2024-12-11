@@ -75,7 +75,7 @@ function CommunityOutreachDay() {
 
               <div className="timeline">
                 {agendaItems.map((item, index) => (
-                  <div key={index} className="timeline-item d-flex">
+                  <div key={index} className="timeline-item d-flex ">
                     <div  className="timeline-dotparent">
                       {" "}
                       <div className="timeline-dot"></div>{" "}
@@ -95,7 +95,7 @@ function CommunityOutreachDay() {
                   key={index}
                   className={` ${
                     index === 3 ? "2" : "1"
-                  } item d-flex align-items-center gap-3`}
+                  } item d-flex  align-items-center gap-3`}
                 >
                   <img
                     src={VolunteerOrientationimg}
@@ -103,6 +103,7 @@ function CommunityOutreachDay() {
                     className="VolunteerOrientationblgimg"
                   />
                   <div>
+                    
                     <p className="VolunteerOrientationblgtitledate">
                       November 2nd, 2024
                     </p>
